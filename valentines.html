@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Valentines day &#128153;</title>
+        <style>            
+            .container
+            {
+                text-align: center;
+                color: aqua;
+                font-family:sans-serif ;
+            }
+
+            .button
+            {
+                padding: 10px 30px 10px 30px;
+                border-radius: 5px;
+                background-color: darkblue;
+                text-decoration: none;
+                color: aqua;
+            }
+            
+            .choice
+            {
+                font-size: 25;
+                font-weight: bold;
+                padding: 3%;
+            }
+
+            .dinner
+            {
+                text-decoration: none;
+                color: blue;
+                background-color: aqua;
+                border-radius: 5px;
+                padding: 0px 5px 0px 5px;
+            }
+
+            a:hover
+            {
+                background-color: royalblue;
+                color: white;
+            }
+
+        </style>
+        <script type="text/javascript">
+            function sad()
+            {
+                document.getElementById("container").innerHTML = '<img src="/Darling/2025_Valentines/assets/sad.gif" onmouseout="revert()">';
+            }
+            
+            function revert()
+            {
+                document.getElementById("container").innerHTML = '<div class="banner"><img src="/Darling/2025_Valentines/assets/penguin-hearts.gif"></div><div><div class="choice">Will you be my Valentines?</div><a class="yesButton" href="">Yes</a> <a onclick="sad()">No</a></div>';
+            }
+
+            function hug()
+            {
+                document.getElementById('container').innerHTML = '<div class="container"><img src="/Darling/2025_Valentines/assets/hug.gif"><div style="font-size: 30px; font-weight: bold;">I love u my darling!! </br> See you at dinner!</div></div>'
+            }
+        </script>
+    </head>
+    <body style="background-color: dodgerblue;">
+        <div id="container" class="container">
+            <div class="banner">
+                <img src="/Darling/2025_Valentines/assets/penguin-hearts.gif">
+            </div>
+            <div>
+                <div class="choice">Will you be my Valentines?</div>
+                <a class="button" onclick="hug()">Yes</a>
+                <a class="button" onclick="sad()">No</a>
+            </div>
+        </div>
+    </body>
+</html>
